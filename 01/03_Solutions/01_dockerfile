@@ -1,0 +1,8 @@
+ARG OS_VERSION=20.04
+FROM ubuntu:${OS_VERSION}
+# Updaten ohne bestätigen
+RUN apt-get update -y
+# bash starten
+CMD ["bash"]
+
+
