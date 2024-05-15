@@ -1,0 +1,9 @@
+# child-dockerfile
+ARG IMG=m347_ibase
+FROM ${IMG}:latest
+CMD ["bash"]
+
+
+
+
+
