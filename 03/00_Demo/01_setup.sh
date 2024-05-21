@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#
+PARAMS='01_params.conf'
+#??
+#??
+#??
+#??
+#??
+# Build a dockerfile with tag -t
+#??
+# List images
+#??
+# Run image with specific name
+#??
+
+
