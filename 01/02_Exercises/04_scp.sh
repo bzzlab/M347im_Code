@@ -5,7 +5,7 @@
 #
 # Set variable for target node (your AWS EC2 instance)
 #??
-# Set private key
+# Set variable for your private key
 #??
 # check if private key is set
 #??
