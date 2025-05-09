@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+# Import parameter
+#??
+# stop container
+#??
+#??
+# Remove container
+#??
+#??
+# Remove image
+#??
+# check removal
+#??
+

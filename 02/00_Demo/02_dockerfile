@@ -1,0 +1,12 @@
+# Fetch OS ubuntu:16.04
+#??
+# Run update, install nginx and remove all installation files
+#??
+#??
+#??
+# listening (and not publishing)
+# the port 80 of the container
+#??
+# run nginx in foreground by
+# turning nginx off as a daemon
+#??

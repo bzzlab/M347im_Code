@@ -1,0 +1,11 @@
+# Ubuntu trusty version installieren
+#??
+# label container i.e. with creator and version as key-value-pair
+#??
+# Update without confirmation (non-interactive)
+#??
+# configure container at the starting point
+# ping localhost 5 times when the container is running
+#??
+#??
+
