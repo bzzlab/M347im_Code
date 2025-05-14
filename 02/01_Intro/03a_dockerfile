@@ -1,0 +1,12 @@
+# parent-dockerfile
+# Fetch OS ubuntu:16.04
+FROM ubuntu:16.04
+# when building write message in temporary file hello.txt
+ONBUILD RUN echo "Greetings from your base image!" > /tmp/hello.txt
+# start bash
+CMD ["bash"]
+
+
+
+
+

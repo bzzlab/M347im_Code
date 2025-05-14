@@ -1,0 +1,12 @@
+# child-dockerfile
+# set argument parent image
+ARG IMG=ibase
+# Fetch OS based on parent image
+FROM ${IMG}:latest
+# start bash
+CMD ["bash"]
+
+
+
+
+
