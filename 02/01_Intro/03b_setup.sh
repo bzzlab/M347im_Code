@@ -14,7 +14,7 @@ sleep 1
 docker ps #??
 sleep 1
 # execute container
-docker exec -it "$container" bash #??
+docker exec -it "$container" sh -c "cat /tmp/hello.txt"
 # Navigate to /tmp and check if hello.txt is present
 # show the content of hello.txt with cat
 
