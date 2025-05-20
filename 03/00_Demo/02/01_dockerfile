@@ -9,8 +9,11 @@
 #??
 #??
 #??
+# Copy the current directory contents into the container at /app
 #??
+# Set the working directory
 #??
+# Install the Python packages specified in requirements.txt
 #??
 # The curl command checks (every 10s) whether the application is running or not making
 # a request to localhost:5000. If the request returns a 200, it will return exit code 0;
@@ -28,8 +31,5 @@
 #           try up to the specified retry number. If the server fails consecutively up to the specified times,
 #           it is then considered unhealthy.
 
+# Health check to ensure the app is running
 #??
-#??
-# stopping process immediatly (in contrary to SIGTERM)
-# STOPSIGNAL SIGKILL
-
