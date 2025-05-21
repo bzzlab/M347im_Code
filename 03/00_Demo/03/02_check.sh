@@ -1,4 +1,4 @@
-                        0#!/bin/bash
+#!/bin/bash
 #
 # set port
 PORT=3000

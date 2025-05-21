@@ -21,8 +21,8 @@ Ferner lohnt es sich, die Pakete im virtual environment zu installieren
 
 #### Run index
 1. Starten Sie Python-App lokal auf Ihrem Rechner
-```flask --app index.py run``` ohne Host- und Port-Angabe
-```flask --app index.py run --host=127.0.0.1 --port=4000```
-```flask run```, vorausgesetzt ```export FLASK_APP=index.py``` ist gesetzt
+```flask --app app.py run``` ohne Host- und Port-Angabe
+```flask --app app.py run --host=127.0.0.1 --port=4000```
+```flask run```, vorausgesetzt ```export FLASK_APP=app.py``` ist gesetzt
 2. Testen Sie die Schnittstelle der Python-App anhand eines selbsterstellten 
 Bash-Scripts lokal auf Ihrem Rechner.
