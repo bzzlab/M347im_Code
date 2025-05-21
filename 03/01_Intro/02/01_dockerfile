@@ -32,4 +32,4 @@ RUN pip install -r requirements.txt
 #           it is then considered unhealthy.
 
 # Health check to ensure the app is running
-HEALTHCHECK --interval=30s --timeout=10s --retries=3 CMD curl --fail http://localhost:3000/ || exit 1
+HEALTHCHECK --interval=30s --timeout=10s --retries=3 CMD curl --fail http://localhost:5000/ || exit 1
