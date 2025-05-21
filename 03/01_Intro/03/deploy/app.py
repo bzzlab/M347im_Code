@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "Welcome to M347 server.\nAdditional functions are /shutdown"
+    return "Welcome to M347 server.\nAdditional functions are /shutdown\n\n"
 
 # How It Works:
 # First tries to use werkzeug.server.shutdown (preferred).
