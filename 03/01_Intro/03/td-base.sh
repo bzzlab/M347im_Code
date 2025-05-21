@@ -15,8 +15,7 @@ case $1 in
   docker stop "$container"  #??
   sleep 3
   # Remove container  #??
-  id=$(docker ps -a |grep ${image}|xargs|cut -d' ' -f1)  #??
-  docker rm "$id"  #??
+  docker rm "$container" #??
   # Remove image
   docker rmi "$image":latest  #??
   # check removal
