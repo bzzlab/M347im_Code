@@ -20,11 +20,16 @@ def set_termin():
     if request.method == "POST":
         content_type = request.headers.get('Content-Type')
         if content_type == 'application/json':
-            st = data.get('salutation')
-            fN = data.get('firstname')
-            lN = data.get('lastname')
-            ap = data.get('appointment')
-            return jsonify({"message": "Dear %s %s %s. You got an appointment on %s. Kind regards Tierpraxis-Team." % (st, fN, lN, ap)})
+            st = data['salutation']
+            fN = data['firstname']
+            lN = data['lastname']
+            ap = data['appointment']
+            msg = (
+                f"Dear {st} {fN} {lN},"
+                f"You got an appointment on {ap}." 
+                f"Kind regards Tierpraxis-Team."
+            )
+            return jsonify({"message": msg})
         else:
             return "Content type is not supported."
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 ### Steps to build and run 0x_dockerfile
-PARAMS='a02-params.sh'
+PARAMS='params.conf'
 if [ ! -f $PARAMS ]; then  #??
     echo $PARAMS does not exist! #??
     exit 2  #??

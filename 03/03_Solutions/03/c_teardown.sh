@@ -1,7 +1,6 @@
 #!/bin/bash
 #
-### Steps to 02_dockerfile
-PARAMS='a02-params.sh'
+PARAMS='params.conf'
 if [ ! -f $PARAMS ]; then  #??
     echo $PARAMS does not exist! #??
     exit 2  #??
@@ -9,8 +8,7 @@ if [ ! -f $PARAMS ]; then  #??
 source $PARAMS
 
 # Remove container
-id=$(docker ps -a |tail -n +2|xargs|cut -d' ' -f15)
-docker rm "$id"
+docker container stop "$container"
 # Remove image
 docker rmi "$image":latest
 # check removal
