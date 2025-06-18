@@ -1,0 +1,23 @@
+# Implement docker healthcheck and stopsignal using dockerfile
+# Containerize a simple flask deploy
+#
+FROM ubuntu:18.04
+RUN apt-get update -y && \
+    apt-get install -y python3-pip python3-dev curl \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+ENV LC_ALL=C.UTF-8
+ENV LANG=C.UTF-8
+ENV MONGO_URI=mongodb://mongo:27017
+ENV FLASK_RUN_HOST=0.0.0.0
+ENV FLASK_RUN_PORT=5000
+
+COPY ./deploy /app
+WORKDIR /app
+RUN pip3 install -r requirements.txt
+# Check every 10s if curl fails requesting the url.
+# If it fails then restart the container
+CMD [ "python3", "task_manager.py"]
+#HEALTHCHECK --interval=10s --timeout=30s CMD curl --fail http://localhost:5000/ || exit 1
+
