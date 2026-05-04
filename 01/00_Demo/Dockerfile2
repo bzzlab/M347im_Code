@@ -1,0 +1,18 @@
+# set OS-Version 20.04 as argument
+#??
+# Get Ubuntu OS
+#??
+# Run update, install curl and remove all installation files
+#??
+    #??
+    #??
+# Create a home-directory hmuster
+#??
+# Setup environmental variables USER, SHELL and LOGNAME.
+# Its value is not essential for this demo.
+#??
+#??
+#??
+# start bash
+#??
+
